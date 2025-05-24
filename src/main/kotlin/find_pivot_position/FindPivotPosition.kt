@@ -12,12 +12,12 @@ fun main() {
 
 fun findPivot(input: Array<Int>): Int {
     val arraySum = input.sum()
-    var rightSum = 0
-    var leftSum = arraySum
+    var leftSum = 0
+    var rightSum = arraySum
     for(i in 0 until input.size-1) {
-        leftSum -= input[i]
+        rightSum -= input[i]
         if (i != 0) {
-           rightSum += input[i-1]
+            leftSum += input[i-1]
         }
 
         if(rightSum == leftSum) return i
