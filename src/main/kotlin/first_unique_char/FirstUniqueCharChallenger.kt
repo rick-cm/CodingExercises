@@ -1,4 +1,4 @@
-package org.example.firstUniqueChar
+package first_unique_char
 
 /**
  * Given a string, find the first non-repeating character
